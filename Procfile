@@ -1,0 +1,1 @@
+web: gunicorn abbatec.wsgi --log-file -

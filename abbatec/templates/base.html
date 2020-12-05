@@ -1,0 +1,254 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Hello world</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+{% load static %}
+<link rel="stylesheet" href="{% static "css/base.css" %}"/>
+<section id="ok">
+<nav class="navbar navbar-expand-lg navbar-light bg-ligth ">
+  <a class="navbar-brand mb-0 h2" href="#"><img src="{% static "images/logo.png" %}" style=" width:20%;"><b>&nbsp; CleanBill</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'price'%}"><b>Pricing &nbsp; &nbsp; &nbsp; &nbsp;</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href={% url 'app'%}><b>Contact Us &nbsp; &nbsp;</b></a>
+      </li>
+    </ul>
+  </div> 
+</nav>
+</section>
+<section class="banner-content">
+    <div class="col-md-6 col-sm-6" style="padding:10px 0px 0px 100px;"></div>  
+      <div style="text-align:right">
+        <img src="{% static "images/manage.png" %}" alt="product" style=" width:35%; "> 
+      </div>  
+    </div>
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-sm-6">
+        <link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}"/>
+          <div style="text-align:center">
+            <h2><b>Bring your shop online with CleanBill &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></h2> <!--style="font-family:Fantasy;"-->
+            <h3> &nbsp;&nbsp;Set up your shop and serve exclusively to your customers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+          </div>
+      </div>
+    </div> 
+  </div>         
+            <div class="table">
+                 <form class="form-inline" method="POST">
+                  {% csrf_token %}
+                  <div class="form-group mx-sm-3 mb-2">
+                   <label for="text" class="sr-only">Enter the Number</label>
+                   <input type="text" class="form-control-lg" name="phone" placeholder="Enter the Number">
+                  </div>
+                   <button type="submit" class="btn btn-primary mb-2"style="background-color: #7848CA; width:20%;height:55px;">Request A Demo <i class="fa fa-arrow-right"></i></button>
+                 </form>
+            </div>                 
+</section>
+
+</body>
+<main>
+<section>
+<div class="row align-items-center">
+  <div class="hai">  
+    <div class=" col-sm-12"style=" padding-top: 400px; padding-left: 7px; padding-rigth: 7px;">
+      <link rel="stylesheet" href="{% static "css/page.css" %}"/>          
+      <p style="line-height: 120%;">A custom app for your store,<br> tailored to your needs</p>
+    </div> 
+  </div>        
+</div>
+<link rel="stylesheet" href="{% static "css/tandu.css" %}"/>  
+<div class="col-md-11 col-sm-12"style=" padding-top: 600px; padding-left: 130px; padding-rigth: 100 px;">  
+ <div class="row">
+    <div class="col-sm-3">
+    <div class="rounded mb-3">
+     <div class="card">
+       <div class="card-body">
+        
+        <img class="helo"src="https://img.icons8.com/color/48/000000/shop.png"/>
+         <h5 class="card-text"><b>Bring your shop&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Online&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></h5>
+       </div>
+     </div>
+    </div> 
+ </div>
+   <div class="col-sm-3">
+     <div class="card" >
+       <div class="card-body">
+        <img class="helo" src="https://img.icons8.com/color/48/000000/price-tag--v2.png"/> 
+         <h5 class="card-title"><b>Manage items, offers and pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></h5>
+       </div>
+     </div>
+   </div>
+   <div class="col-sm-3">
+     <div class="card">
+       <div class="card-body">
+        <div class="helo">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+         width="48" height="48"
+         viewBox="0 0 172 172"
+         style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><path d="M86,172c-47.49649,0 -86,-38.50351 -86,-86v0c0,-47.49649 38.50351,-86 86,-86v0c47.49649,0 86,38.50351 86,86v0c0,47.49649 -38.50351,86 -86,86z" fill="#afd7fe"></path><g fill="#1b6fa3"><path d="M86,28.66667c-4.7472,0 -8.6,3.8528 -8.6,8.6v3.98646c-14.83108,3.82289 -25.8,17.2544 -25.8,33.28021v34.4l-11.46667,11.46667v5.73333h91.73333v-5.73333l-11.46667,-11.46667v-34.4c0,-16.02581 -10.96892,-29.45732 -25.8,-33.28021v-3.98646c0,-4.7472 -3.8528,-8.6 -8.6,-8.6zM51.0737,29.13698c-13.6052,10.48053 -22.40703,26.88915 -22.40703,45.39635h11.46667c0,-14.80347 7.046,-27.93271 17.92786,-36.31484zM120.9263,29.13698l-6.9875,9.08151c10.88187,8.38213 17.92786,21.51138 17.92786,36.31484h11.46667c0,-18.5072 -8.80183,-34.91582 -22.40703,-45.39635zM74.53333,131.86667c0,6.30667 5.16,11.46667 11.46667,11.46667c6.30667,0 11.46667,-5.16 11.46667,-11.46667z"></path></g></g></svg>
+         </div>
+         <h5 class="card-text"><b>Receive updates via &nbsp;sms and notifications</b></h5>
+       </div>
+     </div>
+   </div>
+   <div class="col-sm-3">
+     <div class="card">
+       <div class="card-body">
+        <img class="helo"src="https://img.icons8.com/color/48/000000/whatsapp--v1.png"/>
+         <h5 class="card-text"><b>Share Orders in Whatsapp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></h5>
+       </div>
+     </div>
+   </div>          
+ </div>
+
+<link rel="stylesheet" href="{% static "css/card.css" %}"/>  
+<div class="col-md-11 col-sm-12"style=" padding-top: 150px; padding-left: 150px; padding-rigth: 80 px;">
+ <div class="row">
+    <div class="col-sm-4">
+    <div class="rounded mb-3">
+     <div class="card">
+       <div class="card-body">
+        
+        <img class="helo" src="https://img.icons8.com/color/48/000000/lift-cart-here.png"/>
+         <h5 class="card-text"><b>Choose from tons of Predefined Items&nbsp;&nbsp;&nbsp;&nbsp;</b></h5>
+       </div>
+     </div>
+    </div> 
+ </div>
+   <div class="col-sm-4">
+     <div class="card" >
+       <div class="card-body">
+        <img class="helo"src="https://img.icons8.com/color/48/000000/last-hour.png"/> 
+         <h5 class="card-title"><b>Manage items, offers and pricing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></h5>
+       </div>
+     </div>
+   </div>
+   <div class="col-sm-4">
+     <div class="card">
+       <div class="card-body">
+        <img class="helo"src="https://img.icons8.com/color/48/000000/cash-in-hand.png"/>
+         <h5 class="card-text"><b>Get paid via Gpay and COD</b></h5>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>    
+</section>
+<div>
+</section>
+</main>
+<div class="col-md-6 col-sm-6" style="padding-top: 500px; padding-left: 130px; padding-rigth: 100 px"></div>  
+      <div style="text-align:left">
+        <img src="{% static "images/manage.png" %}" alt="product" style=" width:35%; "> 
+      </div>  
+  <div style="text-align:center">
+   <link rel="stylesheet" href="{% static "css/home.css" %}"/> 
+   <h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add items to your outlet</b></h1>
+    <h4 class="kk">Manage item availability on the app, and easily edit prices.</h4>
+</div>         
+
+<div class="col-md-6 col-sm-6" style="padding-top: 500px; padding-left: 130px; padding-rigth: 100 px"></div>  
+      <div style="text-align:right">
+        <img src="{% static "images/order.png" %}" alt="product" style=" width:35%; "> 
+      </div>  
+  <div style="text-align:center">
+   <link rel="stylesheet" href="{% static "css/home.css" %}"/> 
+   <h1 class="mm"><b>Keep track of your <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orders and payments<br/></b></h1>
+    <h4 class="ll">One stop place for transaction details of all <br>ongoing and completed orders.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br> </h4>
+</div>         
+
+<div class="col-md-6 col-sm-6" style="padding-top: 500px; padding-left: 130px; padding-rigth: 100 px"></div>  
+      <div style="text-align:left">
+        <img src="{% static "images/account.png" %}" alt="product" style=" width:35%; "> 
+      </div>  
+  <div style="text-align:center">
+   <link rel="stylesheet" href="{% static "css/home.css" %}"/> 
+   <h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manage your shop's <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;account easily</br></b></h1>
+    <h4 class="pp">Set working hours, delivery timings, exciting offers <br>&nbsp;&nbsp;and utilize many more features the app has to offer.</br></h4>
+</div>
+<link rel="stylesheet" href="{% static "css/home.css" %}"/> 
+ <a href="https://web.whatsapp.com/" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+</div>
+</body>
+<footer>
+
+<div style="padding-top: 600px;">
+ <div class="row">
+  <div class="col-sm-3">
+     <img class="card-img-top" src="{% static "images/homepage.png" %}"style=" width:70%;">
+    <div class="card" style=" width:90%;height:120px;">
+       <div class="card-body"> 
+         <h5 class="card-title"><b>Explore Categories</b></h5>
+         <h6 class="card-text">Explore various available items in different categories on the app.</h6>
+       </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+     <img class="card-img-top" src="{% static "images/order-items.png" %}"style=" width:70%;">
+    <div class="card" style=" width:90%;height:120px;">
+       <div class="card-body"> 
+         <h5 class="card-title"><b>Place your Order</b></h5>
+         <h6 class="card-text">Add the required items and quantities to the cart, and track</h6>
+       </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+     <img class="card-img-top" src="{% static "images/slot-page.png" %}"style=" width:70%;">
+    <div class="card" style=" width:90%;height:120px;">
+       <div class="card-body"> 
+         <h5 class="card-title"><b>Choose Slots</b></h5>
+         <h6 class="card-text">Choose the delivery date and timings convenient for you</h6>
+       </div>
+    </div>
+  </div>
+  <div class="col-sm-3">
+     <img class="card-img-top" src="{% static "images/order-placed.png" %}"style=" width:70%;">
+    <div class="card" style=" width:90%;height:120px;">
+       <div class="card-body"> 
+         <h5 class="card-title"><b>Receive your order!</b></h5>
+         <h6 class="card-text">Sit back and relax as your order is delivered to your doorstep.</h6>
+       </div>
+    </div>
+  </div>
+ </div>
+</div> 
+<div style="text-align:center ">
+ <div style="padding-top:40%;">
+  <h1 class="card-title"><b>How it works?</b></h1>
+  <img class="card-img-top" src="{% static "images/business-model.png" %}"style=" width:80%";>
+ </div> 
+</div>
+<div class="align-items-center">
+<div style="padding-top:130%; padding-left:400px ;width:80%;height:55px;padding-bottom:80%;">
+  <h1 style="padding-bottom:20%;"><b>Contact Us</b></h1>
+<form class="align-items-center"method="POST">
+{% csrf_token %}
+  <div class="form-group">
+    <input type="text" class="form-control" name="name"  placeholder="Name">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="content"  placeholder="Tell us about your business">
+  </div>
+  <button type="submit" class="btn btn-primary"style="background-color: #7848CA; width:50%; height:50px">Submit</button>
+</div>  
+</div>
+</form>
+
+</footer>
+</html>

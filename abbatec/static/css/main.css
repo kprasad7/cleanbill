@@ -1,0 +1,38 @@
+h3
+{
+
+    margin: 120px 0px 5px;
+    font-family: sans-serif;
+    font-size: 30px;
+}  
+div {
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0px 0px 30px ;
+    
+  }
+h2
+{
+    height: 50%;
+    width: 100%;
+    margin: 30px 0px 5px;
+    font-size: 47px;
+    padding: 0px 0px 0px ;
+    
+
+}
+.btn 
+{
+    width: 40%;
+    height: 100%
+}
+.table
+{
+    height: 50px;
+    line-height: 25px;
+    text-align: center;
+    
+    padding: 200px 0px 0px 80px
+     
+}

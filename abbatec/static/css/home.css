@@ -1,0 +1,45 @@
+h1
+{
+    height: 50%;
+    width: 100%;
+    margin: 30px 0px 10px;
+    font-size: 50px;
+    padding: 100px 0px 0px ;
+    
+
+}
+.kk
+{
+    padding: 60px 0px 0px 350px ;
+}
+.mm
+{
+    padding-right:30%;
+    
+}
+.ll
+{
+    padding: 120px 350px 0px 0px
+}
+.pp
+{
+    padding: 120px 0px 0px 370px ;
+}
+.oo  {
+    float: right;
+    
+}
+.whatsapp_float {
+	position:fixed;
+	width:53px;
+	height:49px;
+	bottom:30px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:30px;
+	text-align:center;
+    font-size:47px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:120;
+}
